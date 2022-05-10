@@ -143,7 +143,7 @@ class MainApp(QMainWindow, ui):
 
     ############################ Trigger #######
     def showTrigger(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         try :
@@ -159,7 +159,7 @@ class MainApp(QMainWindow, ui):
 
     def Excel_Export(self):
 
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         try:
@@ -195,7 +195,7 @@ class MainApp(QMainWindow, ui):
     ############################### QR Code ##############
 
     def Display_Qr(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         try:
@@ -221,7 +221,7 @@ class MainApp(QMainWindow, ui):
         self.tabWidget.setCurrentIndex(0)
 
     def Add_Participant(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         Participant_Name = self.lineEdit.text()
@@ -243,7 +243,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Show_Participant(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         self.cur.execute('''SELECT name, event ,phone ,amount FROM participants''')
@@ -279,7 +279,7 @@ class MainApp(QMainWindow, ui):
     ##########################################  EVENTS ##############
 
     def Add_New_Event(self):
-        self.db = MySQLdb.connect(host='127.0.0.1',user='root',password='vishwaH22*',db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1',user='root',password='YOUR_PASSWORD',db='payment')
         self.cur = self.db.cursor()
 
         Event_Name = self.lineEdit_3.text()
@@ -308,7 +308,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Show_Event(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         self.cur.execute('''SELECT eName, ePrice FROM Event''')
