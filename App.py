@@ -331,7 +331,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Search_Event(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         Event_Name = self.lineEdit_20.text()
@@ -349,7 +349,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Edit_Event(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         Event_Name = self.lineEdit_4.text()
@@ -366,7 +366,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Delete_Event(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         Search_Event_Title = self.lineEdit_20.text()
@@ -384,7 +384,7 @@ class MainApp(QMainWindow, ui):
     ########################################## USERS #################
 
     def Add_New_User(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
 
@@ -406,7 +406,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Login(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         Username = self.lineEdit_26.text()
@@ -433,7 +433,7 @@ class MainApp(QMainWindow, ui):
         tempUsername = self.lineEdit_26.text()
         Password = self.lineEdit_28.text()
         ConPassword = self.lineEdit_27.text()
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
 
@@ -455,7 +455,7 @@ class MainApp(QMainWindow, ui):
         pass
 
     def Search_Participant(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         Participant_Name = self.lineEdit_31.text()
@@ -520,7 +520,7 @@ class MainApp(QMainWindow, ui):
 
 ################# combo box ######
     def Show_Events_ComboBox(self):
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         self.cur.execute(''' SELECT eName from event''')
