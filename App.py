@@ -55,7 +55,7 @@ class LoginApp(QMainWindow, LoginUi):
 
         uName = self.lineEdit_10.text()
         uPass = self.lineEdit_7.text()
-        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='vishwaH22*', db='payment')
+        self.db = MySQLdb.connect(host='127.0.0.1', user='root', password='YOUR_PASSWORD', db='payment')
         self.cur = self.db.cursor()
 
         try:
